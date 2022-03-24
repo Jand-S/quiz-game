@@ -1,5 +1,5 @@
-[
-  [
+{
+  "quiz": [
     {
       "pergunta": "Qual a cor de uma laranja?",
       "respostas": [
@@ -31,4 +31,4 @@
       "certa": 4
     }
   ]
-]
+}
