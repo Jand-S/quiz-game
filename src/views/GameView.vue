@@ -1,15 +1,23 @@
 <template>
   <div class="container">
-    <div v-for="(pergunta, n) in perguntas" :key="pergunta.index">
-      <div v-if="perguntaAtual === n" class="pergunta">
-        <div class="titulo">{{pergunta.pergunta}}</div>
-        <div class="respostas">
-          <button v-for="(res, resposta) in pergunta.respostas" :key="res.index"
-                  @click="responder(resposta, n)" class="btn-resposta">
-            {{res}}
-            {{index}}
-          </button>
+    <div v-if="errou === false">
+      <div v-for="(pergunta, n) in perguntas" :key="pergunta.index">
+        <div v-if="perguntaAtual === n" class="pergunta">
+          <div class="titulo">{{pergunta.pergunta}}</div>
+          <div class="respostas">
+            <button v-for="(res, resposta) in pergunta.respostas" :key="res.index"
+                    @click="responder(resposta, n)" class="btn-resposta">
+              {{res}}
+              {{index}}
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+    <div v-else>
+      <div class="errou">
+        <div>ERROU</div>
+        <button class="btn-voltar" @click="voltar()">voltar</button>
       </div>
     </div>
   </div>
@@ -24,6 +32,7 @@ export default {
     return {
       perguntas: null,
       perguntaAtual: 0,
+      errou: false,
     };
   },
   mounted() {
@@ -38,8 +47,12 @@ export default {
         console.log('acertou');
         this.perguntaAtual += 1;
       } else {
-        this.perguntaAtual = 0;
+        this.errou = true;
       }
+    },
+    voltar() {
+      this.perguntaAtual = 0;
+      this.errou = false;
     },
   },
 };
@@ -51,7 +64,6 @@ export default {
 .container {
   display: flex;
   align-items: center;
-  /*width: 720px;*/
   justify-content: center;
   height: 70vh;
 }
@@ -61,14 +73,27 @@ export default {
   color: white;
 }
 
-.pergunta {}
-
 .respostas {
   display: flex;
   width: 440px;
   flex-wrap: wrap;
   margin: auto;
   margin-top: 15px;
+}
+
+.btn-voltar {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: darkred;
+  color: white;
+  border: 2px solid #111;
+}
+
+.btn-voltar:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
 }
 
 .btn-resposta {
@@ -79,6 +104,12 @@ export default {
   background-color: darkslategrey;
   color: white;
   border: 2px solid #111;
+}
+
+.errou {
+  color: darkred;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .btn-resposta:hover {
