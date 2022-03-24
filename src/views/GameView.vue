@@ -16,12 +16,7 @@
     </div>
     <div v-else>
       <div class="errou">
-        <div>
-          <audio>
-            <track src="src/assets/jumpscare.mp3" kind="captions">
-          </audio>
-          <img alt="jump-scare" src="src/assets/jump.jpg">
-        </div>
+        <h2>Errou</h2>
         <button class="btn-voltar" @click="voltar()">voltar</button>
       </div>
     </div>
