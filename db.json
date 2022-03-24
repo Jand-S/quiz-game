@@ -1,34 +1,64 @@
 {
   "quiz": [
     {
-      "pergunta": "Em qual dia é meu aniversario?",
+      "pergunta": "Os poderes de Luffy de One Piece, são baseados em que?",
       "respostas": [
-        "26/01",
-        "21/01",
-        "23/01",
-        "22/01"
+        "Fogo",
+        "Borracha",
+        "Ferro",
+        "Mola"
+      ],
+      "certa": 2
+    },
+    {
+      "pergunta": "Qual o nome da garota que é apaixonada por Naruto?",
+      "respostas": [
+        "Sakura",
+        "Tenten",
+        "Hinata",
+        "Sasuke"
       ],
       "certa": 3
     },
     {
-      "pergunta": "Onde se encontra a tatuagem da fairy tail na Erza?",
+      "pergunta": "Quantas esferas do drgão são necessárias para invocar o Shenlong?",
       "respostas": [
-        "Pescoço",
-        "Mão direita",
-        "Torso",
-        "Ombro esquerdo "
+        "12",
+        "6",
+        "5",
+        "7"
       ],
       "certa": 4
     },
     {
-      "pergunta": "Qual é o personagem preferido de Kishimoto?",
+      "pergunta": "Em HunterxHunter qual é o nome da técnica que permite o usuário controlar a energia?",
       "respostas": [
-        "Hinata",
-        "Sakura",
-        "Itachi",
-        "Orochimaru"
+        "Chakra",
+        "Haki",
+        "Nen",
+        "Ki"
       ],
-      "certa": 1
-    }
+      "certa": 3
+    },
+    {
+      "pergunta": "Quantos Pokémons existem na primeira geração?",
+      "respostas": [
+        "81",
+        "151",
+        "131",
+        "111"
+      ],
+      "certa": 2
+    },
+    {
+      "pergunta": "Depois da Tsunade quem é o próximo Hokage da Folha?",
+      "respostas": [
+        "Naruto Uzumaki",
+        "Hiruzen Tobirama",
+        "Kakashi Hatake",
+        "Danzou Shimura"
+      ],
+      "certa": 3
+    },
   ]
 }
