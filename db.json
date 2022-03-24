@@ -1,34 +1,34 @@
 {
   "quiz": [
     {
-      "pergunta": "Qual a cor de uma laranja?",
+      "pergunta": "Em qual dia é meu aniversario?",
       "respostas": [
-        "Roxo",
-        "Laranja",
-        "Vermelho",
-        "Amarelo"
+        "26/01",
+        "21/01",
+        "23/01",
+        "22/01"
       ],
-      "certa": 2
+      "certa": 3
     },
     {
-      "pergunta": "Qual a cor de uma melancia?",
+      "pergunta": "Onde se encontra a tatuagem da fairy tail na Erza?",
       "respostas": [
-        "Verde",
-        "Laranja",
-        "Vermelho",
-        "Amarelo"
-      ],
-      "certa": 1
-    },
-    {
-      "pergunta": "Qual a cor de uma banana?",
-      "respostas": [
-        "Roxo",
-        "Laranja",
-        "Vermelho",
-        "Amarelo"
+        "Pescoço",
+        "Mão direita",
+        "Torso",
+        "Ombro esquerdo "
       ],
       "certa": 4
+    },
+    {
+      "pergunta": "Qual é o personagem preferido de Kishimoto?",
+      "respostas": [
+        "Hinata",
+        "Sakura",
+        "Itachi",
+        "Orochimaru"
+      ],
+      "certa": 1
     }
   ]
 }
